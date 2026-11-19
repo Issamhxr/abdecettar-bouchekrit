@@ -176,6 +176,45 @@ button{ font-family: inherit; }
     max-width: 520px;
     margin-bottom: 30px;
 }
+.vote-numbers{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 26px;
+}
+.vote-card{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 18px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 18px rgba(79, 67, 150, 0.1);
+}
+.vote-card span{
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ink-2);
+}
+.vote-card strong{
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--accent);
+}
+.vote-card-main{
+    background: var(--accent);
+    border-color: var(--accent);
+}
+.vote-card-main span{ color: rgba(255, 255, 255, 0.85); }
+.vote-card-main strong{ color: #fff; }
+.number-icon{
+    background: var(--accent) !important;
+    color: #fff !important;
+    font-weight: 800;
+    font-size: 18px;
+}
+
 .hero-actions{
     display: flex;
     gap: 12px;
@@ -414,7 +453,7 @@ button{ font-family: inherit; }
     .hero-photo{ order: -1; width: min(300px, 80%); }
     .photo-tag{ right: 50%; transform: translateX(50%); bottom: -18px; white-space: nowrap; }
     .hero-text p{ margin-inline: auto; }
-    .hero-actions, .socials{ justify-content: center; }
+    .hero-actions, .socials, .vote-numbers{ justify-content: center; }
 }
 @media (max-width: 520px){
     .logo-text{ font-size: 18px; }
